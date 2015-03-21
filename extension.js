@@ -53,7 +53,7 @@
     //Change the bots default settings and make sure they are loaded on launch
 
     localStorage.setItem("basicBotsettings", JSON.stringify({
-        botName: "basicBot",
+        botName: "WolfBot",
         language: "english",
         chatLink: "https://rawgit.com/Yemasthui/basicBot/master/lang/en.json",
         startupCap: 1, // 1-200
@@ -84,12 +84,13 @@
             ["sound", "The song you played had bad sound quality or no sound. "],
             ["nsfw", "The song you contained was NSFW (image or sound). "],
             ["unavailable", "The song you played was not available for some users. "]
+            ["meh", "The song you played was meh-ed a lot, so the song was skipped."]
         ],
         afkpositionCheck: 15,
         afkRankCheck: "ambassador",
         motdEnabled: false,
         motdInterval: 5,
-        motd: "Temporary Message of the Day",
+        motd: "Welcome to the official EpicWolfPak Plug.DJ Channel. EDM (Electronic Dance Music) ONLY!",
         filterChat: true,
         etaRestriction: false,
         welcome: true,
@@ -97,7 +98,7 @@
         rulesLink: null,
         themeLink: null,
         fbLink: null,
-        youtubeLink: null,
+        youtubeLink: "youtube.com/epicwolfpak",
         website: null,
         intervalMessages: [],
         messageInterval: 5,
