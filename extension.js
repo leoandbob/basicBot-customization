@@ -55,6 +55,17 @@
                 
             }
         };
+        
+         bot.commands.dictionaryCommand = {
+            command: 'dictionary',  //The command to be called. With the standard command literal this would be: !bacon
+            rank: 'host', //Minimum user permission to use the command
+            type: 'exact', //Specify if it can accept variables or not (if so, these have to be handled yourself through the chat.message
+            functionality: function (chat, cmd) {
+                
+                    API.sendChat("Plug.DJ Common Dictionary: BA: Brand Ambassador. Do !ba for more info. EDM: Electronic Dance Music. AutoWoot: A way to automatically woot every song played. Great for AFK DJs. Do !autowoot for more info.");
+                
+            }
+        };
 
         //Load the chat package again to account for any changes
         bot.loadChat();
