@@ -51,7 +51,7 @@
             type: 'exact', //Specify if it can accept variables or not (if so, these have to be handled yourself through the chat.message
             functionality: function (chat, cmd) {
                 
-                    API.sendChat("/me Hello Everyone");
+                    API.sendChat("/me Hello Everyone!");
                 
             }
         };
@@ -62,7 +62,7 @@
             type: 'exact', //Specify if it can accept variables or not (if so, these have to be handled yourself through the chat.message
             functionality: function (chat, cmd) {
                 
-                    API.sendChat("/me Plug.DJ Common Dictionary: BA: Brand Ambassador. Do !ba for more info. EDM: Electronic Dance Music. AutoWoot: A way to automatically woot every song played. Great for AFK DJs. Do !autowoot for more info.");
+                    API.sendChat("/me Plug.DJ Common Dictionary: BA: Brand Ambassador. Do !ba for more info. EDM: Electronic Dance Music. Do !edm for more info. AutoWoot: A way to automatically woot every song played. Great for AFK DJs. Do !autowoot for more info.");
                 
             }
         };
