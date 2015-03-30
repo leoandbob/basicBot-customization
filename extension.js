@@ -47,7 +47,7 @@
 
         bot.commands.hiCommand = {
             command: 'hi',  //The command to be called. With the standard command literal this would be: !bacon
-            rank: 'host', //Minimum user permission to use the command
+            rank: 'user', //Minimum user permission to use the command
             type: 'exact', //Specify if it can accept variables or not (if so, these have to be handled yourself through the chat.message
             functionality: function (chat, cmd) {
                 
@@ -58,11 +58,22 @@
         
          bot.commands.dictionaryCommand = {
             command: 'dictionary',  //The command to be called. With the standard command literal this would be: !bacon
-            rank: 'host', //Minimum user permission to use the command
+            rank: 'user', //Minimum user permission to use the command
             type: 'exact', //Specify if it can accept variables or not (if so, these have to be handled yourself through the chat.message
             functionality: function (chat, cmd) {
                 
                     API.sendChat("/me Plug.DJ Common Dictionary: BA: Brand Ambassador. Do !ba for more info. EDM: Electronic Dance Music. AutoWoot: A way to automatically woot every song played. Great for AFK DJs. Do !autowoot for more info.");
+                
+            }
+        };
+        
+         bot.commands.hiCommand = {
+            command: 'edm',  //The command to be called. With the standard command literal this would be: !bacon
+            rank: 'user', //Minimum user permission to use the command
+            type: 'exact', //Specify if it can accept variables or not (if so, these have to be handled yourself through the chat.message
+            functionality: function (chat, cmd) {
+                
+                    API.sendChat("/me Go to http://bit.ly/electronic-dance-music for more info on EDM!");
                 
             }
         };
